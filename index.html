@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relojes</title>
+    <title>Time Collection</title>
     <meta name="description" content="El coleccionismo de relojes.">
     <meta
       name="keywords"
@@ -108,7 +108,7 @@
 
 
       <!-- Catalogo -->
-      <section id="catalogo" style="text-align: center; margin-bottom: 100px">
+      <section id="catalogo" style="text-align: center; margin-bottom: 100px" >
         <h2>Catálogo</h2>
         <p style="text-align: justify">
           Explora nuestra cuidadosa selección de relojes, donde el arte de la
@@ -281,6 +281,7 @@
               <legend>Información de contacto</legend>
               <select
                 name="Trato"
+                required
                 style="
                   display: block;
                   text-align: left;
@@ -297,25 +298,30 @@
                 type="text"
                 name="nombre"
                 placeholder="Nombre"
+                required
                 style="margin-bottom: 10px; width: 100%"
               >
               <input
                 type="text"
                 name="apellidos"
                 placeholder="Apellidos"
+                required
                 style="margin-bottom: 10px; width: 100%"
               >
               <input
                 type="email"
                 name="correo"
                 placeholder="Correo electrónico"
+                required
                 style="margin-bottom: 10px; width: 100%"
               >
               <input
                 type="date"
                 name="fecha_nacimiento"
+                required
                 style="margin-bottom: 10px; width: 100%"
               >
+              <textarea id="text" name="Mensaje" placeholder="Cuéntanos..." rows="3" required style="width: 100%; margin-bottom: 10px;"></textarea>
               <input
                 type="submit"
                 value="Contacta"
@@ -329,9 +335,27 @@
 
     <!-- Pie de página -->
     <footer>
+
+      <!-- Info Contacto -->
       <div style="margin-bottom: 50px;">
         <a href="#encabezado">Volver arriba</a>
       </div>
+      <div
+        style="
+          justify-content: center;
+          gap: 30px;
+          padding: 20px;
+          background-color: #333;
+          color: white;
+        "
+      >
+        <h3>Información contacto</h3>
+        <p>Teléfono: +34 123 45 67 89</p>
+        <p>Email: admin@time.collection</p>
+        <p>Dirección: Calle Master Full Stack, nº 10</p>
+      </div>
+
+      <!-- Redes Sociales -->
       <div
         style="
           display: flex;
@@ -363,6 +387,12 @@
           >
         </a>
       </div>
+      
+      <!-- Copyrith -->
+      <div>
+        <p>&copy; 2024 Time Collection. Todos los derechos reservados.</p>
+      </div>
+
     </footer>
   </body>
 </html>
